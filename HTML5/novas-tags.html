@@ -1,61 +1,63 @@
 <!doctype html>
-
 <html lang="pt-br">
 
-	<head>
-		<title>Introdução HTML5</title>
-		<meta charset="utf-8" />
+	<heade>
 
-	</head>
+		<title>Novas Tags input HTML</title>
+		<meta charset="utf-8">
+	</heade>
 
 	<body>
-		
-		<header>  <!-- substitui uma div com id=cabecalho -->
 
-			<h1>Logo</h1>
-			<span>Meu site</span>
+		<form>
 
-		</header> 
+			<label for="nome">Nome</label> <!--Associa o Label ao input-->
+			<input type="text" id="nome" autofocus>  <!--Autofocus marca o campo do input-->
+			<br><br>
 
-		<nav>   <!-- Barra de Navegação -->
+			<!--Novas tags-->
 
-			<ul>
-				<li> <a href="#">Home</a> </li>
-				<li> <a href="#">Quem somos</a> </li>
-				<li> <a href="#">Contato</a> </li>
-			</ul>
-		</nav>
-		<article> <!-- Criar postagens -->
+			<!--Email-->
+			<label for="email">Email</label> <!--Associa o Label ao input-->
+			<input type="email" id="email" required> <!--required torna preenchimento obrigatorio-->
+			<br><br>
 
-			<h3>Novos conteudos</h3>
 
-			<section classe="cursos-programacao">  <!-- Separa em seções o documento -->
-				<h4>Cursos de Programação</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar maximus ipsum nec malesuada. Pellentesque sollicitudin viverra nunc, id porta tellus. Morbi maximus malesuada neque, eu euismod lorem porttitor vel. Donec at venenatis sem, nec accumsan nunc. Sed at diam vitae sapien semper lobortis in quis nisi. Duis sit amet nulla nec justo tempus congue et vitae tellus. Nunc sodales ante volutpat tortor faucibus interdum. Nullam sed porta libero, viverra pharetra augue. Mauris hendrerit, quam eget ultricies bibendum, nulla ex congue mauris, ac sodales diam eros at odio. Aliquam porttitor nisi at velit dignissim gravida. Duis vitae tristique est. Sed congue nunc dapibus eros scelerisque facilisis vitae sit amet velit. Morbi dapibus dolor in sodales mattis. Morbi id diam fringilla, dapibus libero varius, sodales est.</p>
+			<!--Numero-->
+			<label for="numero">Numero</label> <!--Associa o Label ao input-->
+			<input type="number" id="numero" min="5" max="10" step="2"> 
+			<br><br>
 
-				<span>Atualizado em: <time datetime="20-02-2018">20/02/2018</time></span>
 
-			</section>
-				<section classe="cursos-graficos">  <!-- Separa em seções o documento -->
-				<h4>Cursos de Graficos</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar maximus ipsum nec malesuada. Pellentesque sollicitudin viverra nunc, id porta tellus. Morbi maximus malesuada neque, eu euismod lorem porttitor vel. Donec at venenatis sem, nec accumsan nunc. Sed at diam vitae sapien semper lobortis in quis nisi. Duis sit amet nulla nec justo tempus congue et vitae tellus. Nunc sodales ante volutpat tortor faucibus interdum. Nullam sed porta libero, viverra pharetra augue. Mauris hendrerit, quam eget ultricies bibendum, nulla ex congue mauris, ac sodales diam eros at odio. Aliquam porttitor nisi at velit dignissim gravida. Duis vitae tristique est. Sed congue nunc dapibus eros scelerisque facilisis vitae sit amet velit. Morbi dapibus dolor in sodales mattis. Morbi id diam fringilla, dapibus libero varius, sodales est.</p>
-				<span>Atualizado em: <time datetime="20-03-2018">20/03/2018</time></span>
+			<!--URL-->
+			<label for="url">URL</label> <!--Associa o Label ao input-->
+			<input type="url" id="url" placeholder="ex: http://www.bol.uol.com.br"> <!--placeholder da dica de preenchimento-->
+			<br><br>
 
-			</section>
+			<!--Pesquisar-->
+			<label for="pesquisa">Pesquisar</label> <!--Associa o Label ao input-->
+			<input type="search" id="pesquisa" placeholder="Digite algo"> <!--search cria x para limpar campo-->
+			<br><br>
 
-		</article>
+			<!--Range-->
+			<label for="range">Range</label> <!--Associa o Label ao input-->
+			<input type="range" id="range" min="1" max="10" value="5" > <!--value posiciona o botao-->
+			<br><br>
 
-		<aside> <!-- Cria estruturas ao lado -->
-			<h3>Sobre o autor</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar maximus ipsum nec malesuada. Pellentesque sollicitudin viverra nunc, id porta tellus. Morbi maximus malesuada neque, eu euismod lorem porttitor vel. Donec at venenatis sem, nec accumsan nunc.</p>
+			<!--Data-->
+			<label for="data">Data</label> <!--Associa o Label ao input-->
+			<input type="date" id="data"  > <!--Campo de data com opção de calendario-->
+			<br><br>
 
-		</aside> 
+			<!--Cor-->
+			<label for="cor">Cor</label> <!--Associa o Label ao input-->
+			<input type="color" id="cor"  > <!--Campo para escolha de cor-->
+			<br><br>
 
-		<footer> <!-- utilizado para rodapé -->
 
-			<p>&copy; 2018 Aniro Montenegro</p>
-		</footer>
-		
+			<input type="submit" value="enviar">
+
+
+		</form>
 	</body>
-
 </html>
